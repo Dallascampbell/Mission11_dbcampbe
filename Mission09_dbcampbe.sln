@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33214.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mission09_dbcampbe", "Mission09_dbcampbe\Mission09_dbcampbe.csproj", "{938EA7E4-1D78-45AE-9585-B0A334DA8ADB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{938EA7E4-1D78-45AE-9585-B0A334DA8ADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938EA7E4-1D78-45AE-9585-B0A334DA8ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938EA7E4-1D78-45AE-9585-B0A334DA8ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938EA7E4-1D78-45AE-9585-B0A334DA8ADB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA026D54-6977-46AC-858C-70E9C4C4B9F5}
+	EndGlobalSection
+EndGlobal
