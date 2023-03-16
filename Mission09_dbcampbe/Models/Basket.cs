@@ -9,7 +9,7 @@ namespace Mission09_dbcampbe.Models
     {
         public List<BasketLineItem> Items { get; set; } = new List<BasketLineItem>();
 
-        public void AddItem (Book book, int qty)
+        public virtual void AddItem (Book book, int qty)
         {
             //Find the book needed to add to the cart
             BasketLineItem line = Items
@@ -29,6 +29,16 @@ namespace Mission09_dbcampbe.Models
             {
                 line.Quantity += qty;
             }
+        }
+
+        public virtual void RemoveItem(Book book)
+        {
+            Items.RemoveAll(x => x.Book.BookId == book.BookId);
+        }
+
+        public virtual void ClearBasket()
+        {
+            Items.Clear();
         }
 
         public double CalculateTotal()
