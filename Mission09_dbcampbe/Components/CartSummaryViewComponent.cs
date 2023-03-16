@@ -9,7 +9,8 @@ namespace Mission09_dbcampbe.Components
 {
     public class CartSummaryViewComponent : ViewComponent
     {
-        private Basket basket;
+        //Create ViewComponent for the cart based on the basket
+        private Basket basket;  
         public CartSummaryViewComponent(Basket b)
         {
             basket = b;

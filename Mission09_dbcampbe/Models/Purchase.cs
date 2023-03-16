@@ -30,6 +30,7 @@ namespace Mission09_dbcampbe.Models
         public string Zip { get; set; }
         [Required(ErrorMessage = "Please enter a Country")]
         public string Country { get; set; }
+        //Left anonymous in case I want to add a feature later that includes who has purchased books when looking at books
         public bool Anonymous { get; set; }
     }
 }

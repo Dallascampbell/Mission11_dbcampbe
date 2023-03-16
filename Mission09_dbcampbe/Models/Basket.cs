@@ -32,11 +32,13 @@ namespace Mission09_dbcampbe.Models
             }
         }
 
+        //Remove item feature
         public virtual void RemoveItem(Book book)
         {
             Items.RemoveAll(x => x.Book.BookId == book.BookId);
         }
 
+        //Remove the whole Basket
         public virtual void ClearBasket()
         {
             Items.Clear();

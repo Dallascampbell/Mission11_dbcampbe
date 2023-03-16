@@ -16,6 +16,8 @@ namespace Mission09_dbcampbe.Models
         {
             ISession session = services.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Session;
 
+            //Check to see if session exists and if not create a new one
+            //First ? allows the session to be null. The ?? says if left is null do right
             SessionBasket basket = session?.GetJson<SessionBasket>("Basket") ?? new SessionBasket();
 
             basket.Session = session;

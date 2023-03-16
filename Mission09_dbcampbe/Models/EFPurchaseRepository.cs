@@ -17,6 +17,7 @@ namespace Mission09_dbcampbe.Models
 
         public IQueryable<Purchase> Purchases => context.Purchases.Include(x=>x.Lines).ThenInclude(x=>x.Book);
 
+        //Creates ability to save the purchase to the database
         public void SavePurchase(Purchase purchase)
         {
             context.AttachRange(purchase.Lines.Select(x => x.Book));
